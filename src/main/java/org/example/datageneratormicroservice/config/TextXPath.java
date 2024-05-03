@@ -11,9 +11,9 @@ public final class TextXPath {
 
     @Override
     public String toString() {
-        return "TextPath{" +
-                "xml=" + xml +
-                ", node='" + node + '\'' +
-                '}';
+        return this.xml.nodes(this.node)
+                .get(0)
+                .xpath("text()")
+                .get(0);
     }
 }
