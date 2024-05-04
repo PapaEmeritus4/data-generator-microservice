@@ -7,7 +7,6 @@ import reactor.core.publisher.Mono;
 import reactor.kafka.sender.KafkaSender;
 import reactor.kafka.sender.SenderRecord;
 
-
 @Service
 @RequiredArgsConstructor
 public class KafkaDataServiceImpl implements KafkaDataService {
@@ -35,4 +34,5 @@ public class KafkaDataServiceImpl implements KafkaDataService {
                 )
                 .subscribe();
     }
+
 }

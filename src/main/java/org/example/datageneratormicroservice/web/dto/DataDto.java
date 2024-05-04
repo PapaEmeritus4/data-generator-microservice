@@ -17,6 +17,8 @@ public class DataDto {
 
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
     private LocalDateTime timestamp;
+
     private double measurement;
     private MeasurementType measurementType;
+
 }
